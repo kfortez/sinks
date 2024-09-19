@@ -1,35 +1,114 @@
-/* Outdated CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; 
+    color: #333; 
 }
 
-h1 {
-    margin: 0;
+header {
+    background: #faf7f7; 
+    color: #070505; 
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-ul {
+header h1 {
     margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #ccc; 
+}
+
+
+
+
+body {
+    margin: 1;
     padding: 0;
+    background-color: #ffffff;
 }
 
-li {
-    margin: 0;
-    padding: 0;
-}
 
-p {
-    margin: 0;
-    padding: 0;
-}
 
-img {
+
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
     width: 100%;
-    height: auto;
 }
 
-table {
+.item {
+    border: 2px solid rgb(80, 79, 79);
+    flex: 0 0 25%;
+    padding: 20px;
+    margin: 10px;
+}
+.item p {
+    font-size: 16px;
+}
+
+#dice1 {
+    margin: 5em;
+    width: 100px;
+    padding: 2em;
+    filter: drop-shadow(0 0 20px #0c0c0c);
+}
+
+#dice2 {
+    margin: 5em;
+    width: 100px;
+    padding: 2em;
+    box-shadow: 0 0 20px #121212;
+}
+
+
+footer {
+    background: #000; 
+    color: #fff; 
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
     width: 100%;
-    border-collapse: collapse;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ccc; 
 }
