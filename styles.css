@@ -1,114 +1,66 @@
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; 
-    color: #333; 
 }
 
 header {
-    background: #faf7f7; 
-    color: #070505; 
-    padding: 1rem 0;
+    background-color: #c9c3c8;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    
 }
 
-header h1 {
+h1 {
     margin: 0;
-    font-size: 2rem;
 }
 
-header nav {
-    margin-top: 0.5rem;
+p {
+    margin: 5px 0;
 }
 
-header nav a {
-    color: #f8f8f8;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: #ccc; 
-}
-
-
-
-
-body {
-    margin: 1;
+.navbar {
+    list-style-type: none;
     padding: 0;
-    background-color: #ffffff;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    background-color: #4d4c4c;
+    border-radius: 5px;
 }
 
+.navbar li {
+    margin: 0;
+}
 
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
 
-
+.navbar a:hover {
+    background-color: #555; 
+}
 
 .container1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .item {
-    border: 2px solid rgb(80, 79, 79);
-    flex: 0 0 25%;
-    padding: 20px;
+    flex: 1 1 300px; 
     margin: 10px;
+    text-align: center;
 }
-.item p {
-    font-size: 16px;
-}
-
-#dice1 {
-    margin: 5em;
-    width: 100px;
-    padding: 2em;
-    filter: drop-shadow(0 0 20px #0c0c0c);
-}
-
-#dice2 {
-    margin: 5em;
-    width: 100px;
-    padding: 2em;
-    box-shadow: 0 0 20px #121212;
-}
-
 
 footer {
-    background: #000; 
-    color: #fff; 
-    padding: 1rem 0;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ccc; 
+    padding: 10px;
+    background-color: #000000;
+    color: white;
 }
